@@ -1,0 +1,128 @@
+/* SETUP */
+
+:root {
+    --color-light: #F4F9F9;
+    --color-light-blue: #CCF2F4;
+    --color-blue: #A4EBF3;
+    --color-grey: #AAAAAA;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* USER CARD  */
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 8px;
+    width: 300px;
+    min-height: 350px;
+    box-shadow: 8px 8px 20px 5px rgba(0, 0, 0, 0.4);
+    background-color: var(--color-light);
+}
+
+.user-img {
+    border-radius: 50%;
+    border: 5px solid var(--color-light-blue);
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.user-identifier-container {
+    text-align: center;
+}
+
+.user-identifier {
+    font-size: 2rem;
+    display: block;
+    color: var(--color-blue);
+}
+
+.user-location {
+    font-size: 1.4rem;
+    color: var(--color-grey);
+}
+
+.material-icons-outlined.location-icon {
+    font-size: 1.5em;
+    position: relative;
+    top: 3px;
+    color: var(--color-grey);
+}
+
+.user-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    background-color: var(--color-blue);
+    border-top: 5px solid var(--color-light-blue);
+    padding: 2em;
+    position: relative;
+    top: 13px;   
+    border-radius: 8px;
+}
+
+.material-icons-outlined.link-icon {
+    color:var(--color-light);
+    font-size: 3.5em;
+    transition: color 200ms, background-color 200ms;
+    padding: 0.2em;
+    border-radius: 10px;
+}
+
+.material-icons-outlined.link-icon:hover {
+    color: var(--color-blue);
+    font-size: 3.5em;
+    background-color: var(--color-light);
+}
+
+.arrow-container {
+    margin: 1em;
+}
+
+.material-icons-outlined.arrow-icon {
+    font-size: 4rem;
+    color: var(--color-blue);
+    cursor: pointer;
+    transition: transform 100ms;
+    padding: 0.2em;
+    user-select: none;
+    -webkit-user-select: none;       
+    -moz-user-select: none; 
+    -ms-user-select: none;
+}
+
+.material-icons-outlined.arrow-icon:hover {
+    transform: scale(1.5);
+    color: var(--color-light-blue);
+}
+
+.material-icons-outlined.arrow-icon:active {
+    transform: scale(1.25);
+    color: var(--color-light-blue);
+}
